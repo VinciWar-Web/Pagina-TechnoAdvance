@@ -1,0 +1,20 @@
+.footer{
+	align-self: flex-end; /*Declarar codigo para enviar footer abajo*/
+	font-family: exo;
+	line-height: 1.5;
+	background-color:#000; /*Color de la caja PRINCIPAL*/
+	text-align: center; /*Centrar texto*/
+	width: 100%; /*Adactable a cualquier pantalla*/
+	color:#e9e7e7;
+	box-shadow: 0px -4px 3px rgba(0,0,0,.5);
+}
+
+.derechos{
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.imagenpiedepagina{
+	width: 120px;
+	padding-top: 15px;
+}

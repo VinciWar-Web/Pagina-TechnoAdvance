@@ -1,0 +1,107 @@
+
+/* Estilos del formulario */
+form.contacto {
+    margin: 25px auto 0;
+    width: 60%;
+    padding-bottom: 45px;
+}
+form.contacto fieldset {
+    background: rgba(40,40,40,0.8); /*Color al formulario rojo, verde, azul y transparencia*/ 
+    padding: 50px 30px 30px 30px; /*Margen dentro de la caja 10px vertical y 20px horizontal*/
+    border-radius: 7px; /*Bordea las esquinas*/ 
+    border: none;
+}
+form.contacto fieldset > div {
+    clear: both;
+    margin-bottom: 20px; /*Margen entre los campos de texto*/
+    overflow: hidden;
+}
+
+form.contacto input[type="text"], form.contacto textarea { /*ESTILOS DE LOS CAMPOS DE TEXTO*/
+    background: #F5F5F5;
+    border: none;
+    color: #242424;
+    display: block;
+    float: left;
+    padding: 7px;
+    box-sizing: border-box; /*Aplica el ancho hacia adentro*/
+    /*border: none; /*Elimina los berdes*/
+    font-size: 17px; /*Tamaño de fuente*/
+    font-family: exo;
+    resize: none;
+    width: 100%; /*ancho de los campos de texto*/
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+}
+form.contacto input[type="text"]:focus, form.contacto textarea:focus { /*ESTILOS DE LOS CAMPOS DE TEXTO AL COLOCAR EL CURSOR*/
+    background: #F9F9F9; 
+    border: none;
+    outline: none;
+}
+form.contacto .ultimo{
+    margin-bottom: 0;
+    position: relative
+}
+form.contacto button {
+    background: #ad2829;
+    cursor: pointer;
+    border: none;
+    color: #FFFFFF;
+    float: right;
+    font-family: exo;
+    height: 45px;
+    padding: 0 10px;
+    position: relative;
+    text-transform: uppercase;
+    border: none; /*Elimina los bordes*/
+    box-sizing: border-box; /*Aplica el ancho hacia adentro*/
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+/*form.contacto button:hover{
+    background: #6A6A6A;
+}*/
+ 
+/* AJAX Gif y mensajes de exito o fracaso */
+.hide{
+    display: none;
+}
+.ajaxgif{
+    position: absolute;
+    right: 150px;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+}
+.msg{
+    color: white;
+    font-family: exo;
+    height: 45px;
+    text-align: center;
+    line-height: 44px;
+    border: none;
+    padding: 0 10px;
+    position: absolute;
+    right: -155px;
+    text-transform: uppercase;
+    min-width: 121px;
+    box-sizing: border-box; /*Aplica el ancho hacia adentro*/
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+.msg_ok{
+    background: #589D05;
+}
+.msg_error{
+    background: #8f2222;
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    
+    form.contacto {
+    width: 100%;
+
+}
